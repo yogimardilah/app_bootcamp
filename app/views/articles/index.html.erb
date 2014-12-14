@@ -1,0 +1,7 @@
+<%= link_to 'new', new_article_path %>
+<% @articles.each do |resource| %>
+<%= resource.title %> 
+<%= link_to 'edit', edit_article_path(resource) %>
+<%= link_to 'Hapus', article_path(resource), method: 'delete' %>
+ <br>
+<% end %>

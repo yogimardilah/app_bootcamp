@@ -1,0 +1,8 @@
+<%= form_for(@article) do |f| %>
+	<%= f.text_field :title %>
+	<%= f.text_area :description %>
+	<%= f.text_area :status %>
+	<%= f.text_area :categori %>
+	<%= submit_tag :save %>
+
+<% end %>
